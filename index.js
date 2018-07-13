@@ -3,3 +3,8 @@ function produceDrivingRange(blockRange){
     return blockRange < 10
   }
 }
+function produceTipCalculator(tip){
+  return function(producetip){
+    return tip * producetip
+  }
+}
