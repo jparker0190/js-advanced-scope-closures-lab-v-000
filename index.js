@@ -1,5 +1,5 @@
 function produceDrivingRange(blockRange){
   return function(newblockRange){
-    return newblockRange - blockRange
+    return blockRange < 10
   }
 }
