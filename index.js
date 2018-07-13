@@ -1,11 +1,11 @@
 function produceDrivingRange(blockRange){
   return function(newblockRange){
-     if (blockRange < 10){
-       let result = 10 - blockRange
+     if (blockRange < newblockRange){
+       let result = newblockRange - blockRange
        return `${result} blocks out of range`
      }
-     else if (blockRange > 10){
-       let result = blockRange - 10
+     else if (blockRange > newblockRange){
+       let result = blockRange - newblockRange
        return `within range by ${result}`
      }
   }
